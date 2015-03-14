@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    nav.navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle.collapse(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                    span.sr-only Toggle Navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="#") Cariboutis
+            #navbar.navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li.active
+                        a(href="#") Home
+                    li#about
+                        a(href="#about") About
+
+    .jumbotron
+        .container
+            h1 Cariboutis
+            p Various Software and Design Randomness
+    .container.sections
+        .row
+            .col-lg-3
+                a(href="#projects")
+                    img.img-circle(src="http://blindsquirrelprops.com/wp-content/uploads/2012/09/project_icon_misc.png")
+                h2 Projects
+                p My personal projects and examples
+            .col-lg-3
+                a(href="http://cariboutis.com/blog")
+                    img.img-circle(src="http://www.cancercare.org/assets/blog_icon_2013-0d8eada582fa9bcdf26c7bd5ba5b2fae.jpg")
+                h2 Blog
+                p My personal blog
+            .col-lg-3
+                a(href="#collection")
+                    img.img-circle(src="http://findicons.com/files/icons/2475/preview/simpleshots_icon_collection_full.png")
+                h2 Article Collection
+                p A collection of other blogs, articles, and periodicals that I find interesting and informative in various areas of software development.
+            .col-lg-3
+                a(href="#design")
+                    img.img-circle(src="http://www.highgradedesign.com/wp-content/uploads/2013/08/icon-graphicdesign.png")
+                h2 Design
+                p My personal design projects including wireframes, UI, icons and logo designs.
